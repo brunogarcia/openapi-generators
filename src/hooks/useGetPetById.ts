@@ -1,10 +1,10 @@
 import { useQuery } from "react-query";
-import { PetApi } from "../../api";
+import { useApiContext } from "../context/ApiContext";
 
 const GET_PET_BY_ID = "GET_PET_BY_ID";
 
 export function useGetPetById(petId: number) {
-  const petApi = new PetApi();
+  const { petApi } = useApiContext();
 
   const { data, error, isLoading } = useQuery({
     queryKey: [GET_PET_BY_ID, { petId }],
