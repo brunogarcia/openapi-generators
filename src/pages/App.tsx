@@ -1,15 +1,13 @@
 import React from "react";
-import { QueryClient, QueryClientProvider } from "react-query";
 import "./App.css";
 import Pet from "../components/Pet";
-
-const queryClient = new QueryClient();
+import { QueryProvider } from "../context/QueryContext";
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
+    <QueryProvider>
       <Pet />
-    </QueryClientProvider>
+    </QueryProvider>
   );
 }
 
