@@ -14,7 +14,7 @@ A HTTP client is a piece of software that allows you to make HTTP requests. It's
 
 ## Description
 
-- The main goal of this project is to generate a HTTP client and a ;Mock Server from an Open API definition.
+- The main goal of this project is to generate a HTTP client and a Mock Server from an Open API definition.
 - The definition was copied from the [Open API Petstore](https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml) project.
 - I've created a simple demo to check if the generated code works. And it works! 😀
 
