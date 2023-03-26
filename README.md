@@ -1,4 +1,4 @@
-# Research OpenAPI for generating HTTP Client and Mock Server
+# Research OpenAPI for auto-generating HTTP Client and Mock API
 
 ![App Architecture](app-architecture.png)
 
