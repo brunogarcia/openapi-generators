@@ -1,5 +1,7 @@
 # Research OpenAPI for generating HTTP Client and Mock Server
 
+![App Architecture](app-architecture.png)
+
 ## What is Open API?
 
 [Open API](https://www.openapis.org/) is a specification for describing REST APIs. It's a specification that allows you to describe your REST API in a standard way.
