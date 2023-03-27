@@ -1,4 +1,4 @@
-# Research OpenAPI for auto-generating HTTP Client and Mock API
+# Research OpenAPI for auto-generating API Client and API Mock
 
 ![App Architecture](app-architecture.png)
 
@@ -6,17 +6,17 @@
 
 [Open API](https://www.openapis.org/) is a specification for describing REST APIs. It's a specification that allows you to describe your REST API in a standard way.
 
-## What is a HTTP Client?
+## What is a API Client?
 
-A HTTP client is a piece of software that allows you to make HTTP requests. It's a library that you can use in your application to make HTTP requests.
+A API client is a piece of software that allows you to make HTTP requests. It's a library that you can use in your application to make HTTP requests.
 
-## What is Mock Server Worker?
+## What is API Mock?
 
 [MSW](https://mswjs.io) is a library that allows you to mock HTTP requests. It's a library that you can use in your application to mock HTTP requests.
 
 ## Description
 
-- The main goal of this project is to generate a HTTP client and a Mock Server from an Open API definition.
+- The main goal of this project is to generate a API CLient and API Mock from an Open API definition.
 - The definition was copied from the [Open API Petstore](https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml) project.
 - I've created a simple demo to check if the generated code works. And it works! 😀
 
@@ -27,7 +27,7 @@ A HTTP client is a piece of software that allows you to make HTTP requests. It's
 - [msw-auto-mock](https://github.com/zoubingwu/msw-auto-mock) for generate random mock data from OpenAPI descriptions for MSW.
 - [faker](https://github.com/faker-js/faker) for generate massive amounts of fake (but realistic) data for testing and development.
 
-## Generate the HTTP Client
+## Generate the API Client
 
 For generate the HTTP Client, first you need to install [Docker](https://docs.docker.com/get-docker/).
 
@@ -41,7 +41,7 @@ docker run --rm \
     -o /local/api
 ```
 
-## Generate the Mock Server
+## Generate the API Mock
 
 We use [msw-auto-mock](https://github.com/zoubingwu/msw-auto-mock) to generate random mock data from OpenAPI descriptions for [MSW](https://mswjs.io).
 
