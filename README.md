@@ -2,7 +2,7 @@
 
 ## Description
 
-- The main goal of this project is to generate a API CLient and API Mock from an Open API definition.
+- The main goal of this project is to auto-generate a API Client and API Mock from an Open API definition.
 - The definition was copied from the [Open API Petstore](https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml) project.
 - I've created a simple demo to check if the generated code works. And it works! 😀
 
@@ -10,17 +10,23 @@
 
 ![App Architecture](app-architecture.png)
 
-## What is Open API?
+## What is OpenAPI?
 
-[Open API](https://www.openapis.org/) is a specification that allows you to describe your REST API in a standard way.
+> Originally known as the Swagger Specification, the OpenAPI Specification (OAS) is a format that can be used to describe, produce, consume, and visualize RESTful web services. It's a specification standard for REST APIs that defines the structure and syntax.
+
+Source: [What is OpenAPI?](https://nonamesecurity.com/learn-what-is-openapi)
 
 ## What is a API Client?
 
-A API client is a piece of software that allows you to **make** HTTP requests.
+> An API client is a set of tools and protocols that operate from an application on a computer. They help you to bypass some operations when developing a web application rather than reinventing the wheel every time. Using a client API is a great way to speed up the development process.
+
+Source: [What is Client in API Terms?](https://rapidapi.com/blog/api-glossary/client/)
 
 ## What is a API Mock?
 
-It's a piece of software that you can use in your application to **mock** HTTP requests.
+> Mock APIs are used to simulate actual APIs where you can generate requests with custom data and get realistic responses the actual API would return. It is a fast and easy way of testing your REST API even before it goes live.
+
+Source: [API Mocking - Everything You Need To Know](https://www.gravitee.io/blog/api-mocking-guide)
 
 ## Tools
 
