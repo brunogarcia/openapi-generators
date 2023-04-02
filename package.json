@@ -10,7 +10,8 @@
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint": "npm run lint:format && npm run lint:fix ",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "generate:mock": "npx msw-auto-mock petstore.yaml -o ./mock.js -c 200, --base-url http://petstore.swagger.io/v2"
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",

@@ -58,5 +58,5 @@ We use [msw-auto-mock](https://github.com/zoubingwu/msw-auto-mock) to generate r
 - You must specify the base URL of the API.
 
 ```shell
-npx msw-auto-mock petstore.yaml -o ./mock.js --base-url http://petstore.swagger.io/v2
+npm run generate:mock
 ```

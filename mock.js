@@ -22,19 +22,13 @@ const next = () => {
 
 export const handlers = [
   rest.post(`${baseURL}/pet`, (_, res, ctx) => {
-    const resultArray = [
-      [ctx.status(200), ctx.json(getAddPet200Response())],
-      [ctx.status(405), ctx.json(null)],
-    ];
+    const resultArray = [[ctx.status(200), ctx.json(getAddPet200Response())]];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.put(`${baseURL}/pet`, (_, res, ctx) => {
     const resultArray = [
       [ctx.status(200), ctx.json(getUpdatePet200Response())],
-      [ctx.status(400), ctx.json(null)],
-      [ctx.status(404), ctx.json(null)],
-      [ctx.status(405), ctx.json(null)],
     ];
 
     return res(...resultArray[next() % resultArray.length]);
@@ -42,7 +36,6 @@ export const handlers = [
   rest.get(`${baseURL}/pet/findByStatus`, (_, res, ctx) => {
     const resultArray = [
       [ctx.status(200), ctx.json(getFindPetsByStatus200Response())],
-      [ctx.status(400), ctx.json(null)],
     ];
 
     return res(...resultArray[next() % resultArray.length]);
@@ -50,7 +43,6 @@ export const handlers = [
   rest.get(`${baseURL}/pet/findByTags`, (_, res, ctx) => {
     const resultArray = [
       [ctx.status(200), ctx.json(getFindPetsByTags200Response())],
-      [ctx.status(400), ctx.json(null)],
     ];
 
     return res(...resultArray[next() % resultArray.length]);
@@ -58,19 +50,17 @@ export const handlers = [
   rest.get(`${baseURL}/pet/:petId`, (_, res, ctx) => {
     const resultArray = [
       [ctx.status(200), ctx.json(getGetPetById200Response())],
-      [ctx.status(400), ctx.json(null)],
-      [ctx.status(404), ctx.json(null)],
     ];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.post(`${baseURL}/pet/:petId`, (_, res, ctx) => {
-    const resultArray = [[ctx.status(405), ctx.json(null)]];
+    const resultArray = [];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.delete(`${baseURL}/pet/:petId`, (_, res, ctx) => {
-    const resultArray = [[ctx.status(400), ctx.json(null)]];
+    const resultArray = [];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
@@ -91,7 +81,6 @@ export const handlers = [
   rest.post(`${baseURL}/store/order`, (_, res, ctx) => {
     const resultArray = [
       [ctx.status(200), ctx.json(getPlaceOrder200Response())],
-      [ctx.status(400), ctx.json(null)],
     ];
 
     return res(...resultArray[next() % resultArray.length]);
@@ -99,70 +88,56 @@ export const handlers = [
   rest.get(`${baseURL}/store/order/:orderId`, (_, res, ctx) => {
     const resultArray = [
       [ctx.status(200), ctx.json(getGetOrderById200Response())],
-      [ctx.status(400), ctx.json(null)],
-      [ctx.status(404), ctx.json(null)],
     ];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.delete(`${baseURL}/store/order/:orderId`, (_, res, ctx) => {
-    const resultArray = [
-      [ctx.status(400), ctx.json(null)],
-      [ctx.status(404), ctx.json(null)],
-    ];
+    const resultArray = [];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.post(`${baseURL}/user`, (_, res, ctx) => {
-    const resultArray = [[ctx.status(NaN), ctx.json(null)]];
+    const resultArray = [];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.post(`${baseURL}/user/createWithArray`, (_, res, ctx) => {
-    const resultArray = [[ctx.status(NaN), ctx.json(null)]];
+    const resultArray = [];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.post(`${baseURL}/user/createWithList`, (_, res, ctx) => {
-    const resultArray = [[ctx.status(NaN), ctx.json(null)]];
+    const resultArray = [];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.get(`${baseURL}/user/login`, (_, res, ctx) => {
     const resultArray = [
       [ctx.status(200), ctx.json(getLoginUser200Response())],
-      [ctx.status(400), ctx.json(null)],
     ];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.get(`${baseURL}/user/logout`, (_, res, ctx) => {
-    const resultArray = [[ctx.status(NaN), ctx.json(null)]];
+    const resultArray = [];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.get(`${baseURL}/user/:username`, (_, res, ctx) => {
     const resultArray = [
       [ctx.status(200), ctx.json(getGetUserByName200Response())],
-      [ctx.status(400), ctx.json(null)],
-      [ctx.status(404), ctx.json(null)],
     ];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.put(`${baseURL}/user/:username`, (_, res, ctx) => {
-    const resultArray = [
-      [ctx.status(400), ctx.json(null)],
-      [ctx.status(404), ctx.json(null)],
-    ];
+    const resultArray = [];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
   rest.delete(`${baseURL}/user/:username`, (_, res, ctx) => {
-    const resultArray = [
-      [ctx.status(400), ctx.json(null)],
-      [ctx.status(404), ctx.json(null)],
-    ];
+    const resultArray = [];
 
     return res(...resultArray[next() % resultArray.length]);
   }),
