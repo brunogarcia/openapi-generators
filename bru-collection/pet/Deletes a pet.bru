@@ -1,0 +1,15 @@
+meta {
+  name: Deletes a pet
+  type: http
+  seq: 7
+}
+
+delete {
+  url: http://petstore.swagger.io/v2/pet/{petId}
+  body: none
+  auth: none
+}
+
+headers {
+  ~api_key: 
+}

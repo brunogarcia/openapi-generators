@@ -1,0 +1,15 @@
+meta {
+  name: Find pet by ID
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://petstore.swagger.io/v2/pet/{petId}
+  body: none
+  auth: none
+}
+
+headers {
+  api_key: {{apiKey}}
+}

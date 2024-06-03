@@ -1,0 +1,16 @@
+meta {
+  name: uploads an image
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://petstore.swagger.io/v2/pet/{petId}/uploadImage
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  additionalMetadata: 
+  file: 
+}

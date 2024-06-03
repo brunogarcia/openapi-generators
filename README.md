@@ -2,7 +2,7 @@
 
 ## Description
 
-- The main goal of this project is to auto-generate a API Client and API Mock from an Open API definition.
+- The main goal of this project is to auto-generate an API Client, an API Mock, and a Bruno Collection. All of them generating from the same Open API definition.
 - The definition was copied from the [Open API Petstore](https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml) project.
 - I've created a simple demo to check if the generated code works. And it works! 😀
 
@@ -29,7 +29,7 @@ Source: [What is Client in API Terms?](https://rapidapi.com/blog/api-glossary/cl
 Source: [API Mocking - Everything You Need To Know](https://www.gravitee.io/blog/api-mocking-guide)
 
 ## Tools
-
+- [Bruno](https://www.usebruno.com/) stores your collections directly in a folder on your filesystem. We use a plain text markup language, Bru, to save information about API requests.
 - [typescript-fetch](https://openapi-generator.tech/docs/generators/typescript-fetch/) for generate the API Client. There are other generators that can be used. Check the [Client Generator](https://openapi-generator.tech/docs/generators#client-generators) page.
 - [MSW](https://mswjs.io) for generate the API Mock.
 - [msw-auto-mock](https://github.com/zoubingwu/msw-auto-mock) for generate random mock data from OpenAPI descriptions for MSW.
